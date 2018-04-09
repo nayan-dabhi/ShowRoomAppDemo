@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/sr_content_bg"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/sr_slider_card_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop" />
+
+        <!-- Slide Title -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/sr_slider_card_padding"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sr_slider_card_title_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:textAppearance="@style/SrSliderCardTitleText" />
+
+            <ImageButton
+                android:id="@+id/sr_slider_card_share_btn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="3dp"
+                android:background="@color/sr_content_bg"
+                android:src="@drawable/sr_share_icon" />
+
+        </LinearLayout>
+
+        <!-- Description-->
+        <com.ramotion.showroom.EllipsizingTextView
+            android:id="@+id/sr_slider_card_description_text"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/sr_slider_card_padding"
+            android:layout_marginEnd="@dimen/sr_slider_card_padding"
+            android:layout_marginStart="@dimen/sr_slider_card_padding"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:textAppearance="@style/SrSliderCardDescriptionText" />
+
+        <!--Time note-->
+        <TextView
+            android:id="@+id/sr_slider_card_time_note_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="@dimen/sr_slider_card_padding"
+            android:layout_marginStart="@dimen/sr_slider_card_padding"
+            android:background="@android:color/transparent"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/sr_hours_icon"
+            android:textAppearance="@style/SrSliderCardNoteText" />
+
+        <!-- Tech note-->
+        <TextView
+            android:id="@+id/sr_slider_card_tech_note_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/sr_slider_card_padding"
+            android:layout_marginEnd="@dimen/sr_slider_card_padding"
+            android:layout_marginStart="@dimen/sr_slider_card_padding"
+            android:background="@android:color/transparent"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/sr_technology_icon"
+            android:textAppearance="@style/SrSliderCardNoteText" />
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>
+

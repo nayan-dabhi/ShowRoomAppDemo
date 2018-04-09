@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- CARD SLIDER -->
+    <style name="CsAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/cs_color_primary</item>
+        <item name="colorPrimaryDark">@color/cs_color_primary_dark</item>
+        <item name="colorAccent">@color/cs_color_accent</item>
+        <item name="android:colorBackground">@android:color/white</item>
+        <item name="android:windowContentTransitions">false</item>
+        <item name="android:windowSharedElementExitTransition">@android:transition/no_transition
+        </item>
+        <item name="android:windowAnimationStyle">@style/SrExamplesActivityAnimations</item>
+
+    </style>
+
+    <!-- GARLAND VIEW -->
+    <style name="GvAppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowEnterTransition">@transition/gv_details_transition</item>
+        <item name="android:windowExitTransition">@transition/gv_details_transition</item>
+        <item name="android:windowSharedElementEnterTransition">@transition/gv_details_transition
+        </item>
+        <item name="android:windowSharedElementExitTransition">@transition/gv_details_transition
+        </item>
+        <item name="android:windowBackground">@color/gv_color_primary</item>
+        <item name="android:navigationBarColor">@color/gv_color_primary</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowAnimationStyle">@style/SrExamplesActivityAnimations</item>
+
+    </style>
+
+</resources>
